@@ -15,7 +15,7 @@ const regularUser = {
 
 console.log(regularUser.fullName.userFullname.lastName);
 
-//-------------Combining two objects--------------------------
+//-------------Combining two objects (returns a new string)--------------------------
 
 const obj1 = {1:"a", 2:"b"}
 const obj2 = {3:"c", 4:"d"}
@@ -43,3 +43,17 @@ const user = [
 console.log(regularUser);
 
 console.log(Object.keys(regularUser));
+
+
+// ------------------------- object de-structuring-----------------------------------
+
+
+const Course = {
+    price: 999,
+    courseInstructor: "tausif"
+}
+//console.log(Course.courseInstructor);
+
+const {courseInstructor: instructor} = Course
+
+console.log(instructor);
