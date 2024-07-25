@@ -44,8 +44,8 @@ const books = [
     return bk.publish < 2000 && bk.genre === "History"
   })
 
-  userBooks = books.filter((bk) => {
-    return bk.publish === 2000 || bk.title === "Book Eight"
+  userBooks = books.reduce((bk) => {
+    return bk.publish === 2004 // || bk.title === "Book Eight"
   })
 
   console.log(userBooks);
